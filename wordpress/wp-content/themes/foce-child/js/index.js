@@ -50,15 +50,6 @@ for (let i = 0; i < sections.length; i++) {
 
 // acceleration de la rotation des fleurs au scroll
 
-const elements = document.querySelectorAll('.story h2::after, .story__article::after, #studio h2::before, #studio h2::after, .nomination::after, .nomination::before, .site-footer ul::after, .site-footer ul::before');
-
-window.addEventListener('scroll', () => {
-    const rotation = window.scrollY / 100;
-    elements.forEach((element) => {
-        element.style.transform = `rotate(${rotation}deg)`;
-    });
-});
-
 
 // parallax vidéo avec simpleParallaxJS
 
