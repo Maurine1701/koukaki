@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/*
+ Theme Name:  Fleurs d'orangers et chats errants - Oscars Short
+ Theme URI: https://www.koukaki.local/
+ Author: Studio Koukaki
+ Author URI: https://www.koukaki.local/
+ Template: foce
+ Description: Thème enfant à l'occasion de la nomination aux Oscars Shorts
+ Version: 0.1
+ */
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.titleAnimation {
+  display: inline-block;
+  margin-right: 15px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.2s ease-in, transform 0.5s ease-in;
+}
+.titleAnimation.visibility {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.story h2::after,
+.story__article::after,
+#studio h2::after {
+  animation: rotate 15s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#studio h2::before {
+  animation: rotate 15s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.nomination::before, .nomination::after,
+.site-footer ul::before,
+.site-footer ul::after {
+  animation: rotate 15s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: floatAnimation 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+main {
+  overflow: hidden;
+}
+
+.story {
+  margin-top: 100px;
+}
+
+.nomination {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-left: 230px;
+  margin-right: 230px;
+  align-items: center;
+}
+.nomination::before {
+  content: url("./assets/images/Sunflower.png");
+  position: absolute;
+  left: -70px;
+  top: -80px;
+}
+.nomination::after {
+  content: url("./assets/images/orchid.png");
+  position: absolute;
+  right: -320px;
+  top: -130px;
+  z-index: -1;
+}
+.nomination .imageNomination {
+  mix-blend-mode: darken;
+  margin-top: -30px;
+}
+.nomination .titreOscar {
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 1.8em 2em;
+  line-height: 45px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("./assets/images/oscar_bg.png");
+}
+
+.banner {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+.banner .fallbackImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.banner .video {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .banner video {
+    display: none;
+  }
+  .banner img {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */

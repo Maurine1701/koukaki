@@ -1,0 +1,13 @@
+@mixin rotateFlowers {
+    animation: rotate 15s linear infinite;
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}

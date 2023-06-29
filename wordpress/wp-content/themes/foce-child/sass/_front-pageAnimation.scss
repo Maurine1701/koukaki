@@ -1,0 +1,82 @@
+@import 'mixins/mixins';
+
+
+//Fade-in sections
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//apparition titres
+
+.titleAnimation {
+    display: inline-block;
+    margin-right: 15px;
+    opacity: 0;
+    transform: translateY(100%);
+
+    transition: opacity 0.2s ease-in, transform 0.5s ease-in;
+
+    &.visibility {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//Rotation des fleurs
+.story h2,
+.story__article,
+#studio h2 {
+    &::after {
+        @include rotateFlowers;
+    }
+}
+
+#studio h2::before {
+    @include rotateFlowers;
+}
+
+.nomination,
+.site-footer ul {
+
+    &::before,
+    &::after {
+        @include rotateFlowers;
+    }
+}
+
+//animation flottement de titre
+
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    animation: floatAnimation 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -60%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
