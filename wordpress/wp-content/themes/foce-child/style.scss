@@ -10,90 +10,14 @@
 
 @import 'sass/front-pageAnimation';
 
+@import 'sass/banniereVideo';
 
-main {
-    overflow: hidden;
-}
+@import 'sass/carrouselCharacters';
 
-.story {
-    margin-top: 100px;
-}
+@import 'sass/general';
 
-.nomination {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
-    margin-left: 230px;
-    margin-right: 230px;
-    align-items: center;
+@import 'sass/responsive';
 
-    &::before {
-        content: url('./assets/images/Sunflower.png');
-        position: absolute;
-        left: -70px;
-        top: -80px;
-    }
+@import 'sass/sectionOscars';
 
-    &::after {
-        content: url('./assets/images/orchid.png');
-        position: absolute;
-        right: -320px;
-        top: -130px;
-        z-index: -1;
-
-    }
-
-    .imageNomination {
-        mix-blend-mode: darken;
-        margin-top: -30px;
-    }
-
-    .titreOscar {
-        font-size: 35px;
-        font-weight: 700;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        padding: 1.8em 2em;
-        line-height: 45px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        background-image: url('./assets/images/oscar_bg.png');
-
-    }
-
-
-}
-
-.banner {
-    position: relative;
-    height: 500px;
-    overflow: hidden;
-}
-
-&.fallbackImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-&.video {
-    position: relative;
-    height: 100%;
-    z-index: 1;
-}
-
-@media (max-width: 767px) {
-    .banner video {
-        display: none;
-    }
-
-    .banner img {
-        display: block;
-    }
-}
+@import 'sass/front-pageAnimation';

@@ -567,7 +567,7 @@ table {
 	overflow: hidden;
 }
 
-/*.site-footer::before {
+.site-footer::before {
 	content: url("./assets/images/Sunflower.png");
 	position: absolute;
 	left: 4em;
@@ -579,7 +579,7 @@ table {
 	position: absolute;
 	right: -4em;
 	bottom: 7.8em;
-}*/
+}
 
 .site-footer ul {
 	padding: 0;

@@ -1,0 +1,11 @@
+main {
+    overflow: hidden;
+}
+
+.site-footer::after {
+    display: none !important;
+}
+
+.site-footer::before {
+    display: none !important;
+}

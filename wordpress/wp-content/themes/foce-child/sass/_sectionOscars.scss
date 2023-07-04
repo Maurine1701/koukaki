@@ -1,0 +1,50 @@
+.nomination {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 230px;
+    margin-right: 230px;
+    align-items: center;
+
+    &::before {
+        content: url('./assets/images/Sunflower.png');
+        position: absolute;
+        left: -130px;
+        top: -80px;
+    }
+
+    &::after {
+        content: url('./assets/images/orchid.png');
+        position: absolute;
+        right: -320px;
+        top: -130px;
+        z-index: -1;
+
+    }
+
+    .imageNomination {
+        mix-blend-mode: darken;
+        margin-top: -30px;
+    }
+
+    .titreOscar {
+        font-size: 35px;
+        font-weight: 700;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        padding: 1.8em 2em;
+        line-height: 45px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-image: url('./assets/images/oscar_bg.png');
+
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+
+}

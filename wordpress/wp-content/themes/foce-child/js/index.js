@@ -1,11 +1,11 @@
 // Animations Fade-in
-// création d'une nouvelle instance de l'API IntersectionObserver
+// création d'une nouvelle instance de l'API IntersectionObserver pour le fade in 
 const sectionObserver = new IntersectionObserver(function (entries, observer) {
     entries.forEach(function (entry) {
         if (entry.isIntersecting) {
             entry.target.classList.add('fadeIn');
 
-
+            // apparition des titres
             // Récupération des titres h2 et h3 et division de chaque mot des titres
             const title = entry.target.querySelector('h2, h3');
 
@@ -39,6 +39,7 @@ const sectionObserver = new IntersectionObserver(function (entries, observer) {
 }, {
     rootMargin: '-100px 0px -100px 0px'
 });
+
 // Sélection des sections à animer
 const sections = document.querySelectorAll('.story, #characters, #place, #studio, footer');
 
@@ -47,9 +48,6 @@ for (let i = 0; i < sections.length; i++) {
     const section = sections[i];
     sectionObserver.observe(section);
 }
-
-// acceleration de la rotation des fleurs au scroll
-
 
 // parallax vidéo avec simpleParallaxJS
 
@@ -62,6 +60,30 @@ document.addEventListener('DOMContentLoaded', function () {
         delay: 0.5,
         transition: 'ease-in-out'
     });
+});
+
+// Carrousel Characters
+
+const swiper = new Swiper(".swiper", {
+    direction: 'horizontal',
+    centeredSlides: true,
+    slidesPerView: "auto",
+    speed: 1000,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    loopedSlides: 2,
+    loopAdditionalSlides: 1,
+    effect: "coverflow",
+    coverflowEffect: {
+        slideShadows: false,
+        rotate: 40,
+        stretch: 0,
+        depth: 50,
+        modifier: 1,
+    },
 });
 
 
