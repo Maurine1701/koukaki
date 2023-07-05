@@ -29,6 +29,8 @@ get_header();
                 <div>
                     <h3>Le Lieu</h3>
                     <p><?php echo get_theme_mod('place'); ?></p>
+                    <img class="bigCloud" src="<?php echo get_theme_file_uri() . '/assets/images/bigCloud.png'; ?>" alt="grandNuage">
+                    <img class="littleCloud" src="<?php echo get_theme_file_uri() . '/assets/images/littleCloud.png'; ?>" alt="petitNuage">
                 </div>
 
             </article>

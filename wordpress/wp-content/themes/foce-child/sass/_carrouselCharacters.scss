@@ -14,24 +14,25 @@ h3 {
 
 .swiper {
     width: 100%;
-    width: 1400px;
     padding-top: 50px;
     padding-bottom: 50px;
     margin: auto;
-    border: 2px solid black;
+    margin-left: -33.5em;
 
 
     &-slide {
         background-position: center;
         background-size: cover;
-        width: 400px;
-        height: 400px;
-        margin-right: 100px;
+        width: 480px;
+        height: 480px;
+        margin-right: 40px;
+        margin-left: 40px;
 
 
         img {
             display: block;
             width: 100%;
+
 
         }
     }

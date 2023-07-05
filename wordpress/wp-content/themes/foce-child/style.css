@@ -131,18 +131,18 @@ h3 {
 
 .swiper {
   width: 100%;
-  width: 1400px;
   padding-top: 50px;
   padding-bottom: 50px;
   margin: auto;
-  border: 2px solid black;
+  margin-left: -33.5em;
 }
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 400px;
-  height: 400px;
-  margin-right: 100px;
+  width: 480px;
+  height: 480px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 .swiper-slide img {
   display: block;
@@ -159,6 +159,10 @@ main {
 
 .site-footer::before {
   display: none !important;
+}
+
+.story {
+  margin-top: 80px;
 }
 
 @media (max-width: 767px) {
@@ -296,4 +300,33 @@ main {
   100% {
     transform: translate(-50%, -50%);
   }
+}
+#place {
+  display: flex;
+  background-image: url("./assets/images/imagePlace.png") !important;
+  width: 100%;
+  min-height: 699px;
+  background-size: cover;
+  margin-top: -100px;
+}
+#place div {
+  margin-left: 10em !important;
+  margin-top: 100px;
+}
+#place .bigCloud {
+  width: 316px;
+  height: 122px;
+  position: relative;
+  top: -380px;
+  left: 880px;
+  filter: blur(10px);
+  z-index: 1;
+}
+#place .littleCloud {
+  width: 142px;
+  height: 55px;
+  top: -330px;
+  left: 650px;
+  position: relative;
+  filter: blur(12px);
 }/*# sourceMappingURL=style.css.map */
