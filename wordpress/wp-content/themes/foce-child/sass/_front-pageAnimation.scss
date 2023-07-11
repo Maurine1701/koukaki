@@ -56,6 +56,14 @@
     }
 }
 
+.orchidMenu,
+.flowerMenu,
+.sunflowerMenu,
+.randomflowerMenu,
+.hibiscusMenu {
+    @include rotateFlowers;
+}
+
 //animation flottement de titre
 
 .logo {
@@ -78,5 +86,27 @@
 
     100% {
         transform: translate(-50%, -50%);
+    }
+}
+
+//animation flottement chat menu fullscreen
+
+.blueCatMenu,
+.orangeCatMenu,
+.blackCatMenu {
+    animation: floatCat 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatCat {
+    0% {
+        transform: translate(-50%, -100%) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, -90%) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(-50%, -95%) rotate(0deg);
     }
 }

@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     new simpleParallax(video, {
         orientation: 'right',
-        scale: 1.15,
+        scale: 1.10,
         delay: 0.5,
         transition: 'ease-in-out'
     });
@@ -140,6 +140,16 @@ window.addEventListener('scroll', function () {
 
 
 
+// Menu Burger
 
+document.addEventListener('DOMContentLoaded', function () {
+    const menuBurger = document.querySelector('.burgerBtn');
+    const fullscreenMenu = document.querySelector('.fullscreenMenu');
+
+    menuBurger.addEventListener('click', function () {
+        menuBurger.classList.toggle('active');
+        fullscreenMenu.classList.toggle('open');
+    });
+});
 
 

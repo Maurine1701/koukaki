@@ -13,3 +13,11 @@ main {
 .story {
     margin-top: 80px;
 }
+
+.story h2::after {
+    height: 155px;
+}
+
+#studio ::after {
+    height: 108px;
+}
