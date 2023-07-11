@@ -1,14 +1,22 @@
 // Fonction de déclenchement de l'animation de fade-in
 function fadeInAnimation(entry) {
+    // Ajout de la classe 'fadeIn' pour déclencher l'animation de fade-in
     entry.target.classList.add('fadeIn');
 
-    // Sélection, division et ajout de l'animation sur les titres
+
+    // Animation apparition des titres
+    // Sélection de l'élément de titre (h2 ou h3) dans l'élément cible
     const title = entry.target.querySelector('h2, h3');
 
+    // Vérification si le titre existe et s'il a du contenu
     if (title && title.textContent) {
+        // Division du contenu du titre en mots
         const words = title.textContent.split(' ');
+
+        // Effacement du contenu du titre
         title.textContent = '';
 
+        // Création d'éléments 'span' pour chaque mot du titre et ajout de la classe 'titleAnimation'
         words.forEach((word) => {
             const span = document.createElement('span');
             span.classList.add('titleAnimation');
@@ -16,8 +24,10 @@ function fadeInAnimation(entry) {
             title.appendChild(span);
         });
 
+        // Sélection de tous les éléments 'span' avec la classe 'titleAnimation' à l'intérieur du titre
         const spans = title.querySelectorAll('.titleAnimation');
 
+        // Ajout progressif de la classe 'visibility' à chaque élément 'span' avec un délai
         spans.forEach((span, index) => {
             const delay = index === 0 ? 400 : index * 600;
 
@@ -143,34 +153,46 @@ window.addEventListener('scroll', function () {
 // Menu Burger
 
 document.addEventListener('DOMContentLoaded', function () {
+    // Sélection des éléments bouton du menu burger et menu fullscreen
     const menuBurger = document.querySelector('.burgerBtn');
     const fullscreenMenu = document.querySelector('.fullscreenMenu');
 
+    // Ajout d'un écouteur d'événement click au bouton de menu burger
     menuBurger.addEventListener('click', function () {
+        // Ajout de la classe 'active' pour animer le bouton de menu burger
         menuBurger.classList.toggle('active');
+
+        // Ajout de la classe 'open' pour afficher ou masquer le menu fullscreen
         fullscreenMenu.classList.toggle('open');
     });
 });
 
+
+
+
 // Apparition lien menu 
 
 document.addEventListener('DOMContentLoaded', function () {
+    // Sélection des éléments menu fullscreen et tous les liens du menu
     const fullscreenMenu = document.querySelector('.fullscreenMenu');
     const menuLinks = fullscreenMenu.querySelectorAll('ul li a');
 
+    // Ajout de la classe 'titleAnimation' à chaque lien du menu
     menuLinks.forEach((link) => {
         link.classList.add('titleAnimation');
     });
 
-
+    // Déclenchement de l'animation avec un délai
     setTimeout(() => {
         menuLinks.forEach((link, index) => {
             const delay = index === 0 ? 400 : index * 600;
 
+            // Ajout de la classe 'visibility' avec le délai de 1000ms
             setTimeout(() => {
                 link.classList.add('visibility');
             }, delay);
         });
-    }, 1000);
+    }, 1400);
 });
+
 

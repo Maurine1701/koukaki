@@ -44,6 +44,7 @@
         width: 100%;
         height: 4px;
         background-color: #000;
+        transition: transform 0.5s ease-in-out;
     }
 
     ::before {
@@ -56,9 +57,18 @@
 
 }
 
-.burgerBtn .active span {
-    background-color: transparent;
+.active span {
+    background-color: transparent !important;
+
+    &::before {
+        transform: translateY(0px) rotateZ(45deg);
+    }
+
+    &::after {
+        transform: translateY(0px) rotateZ(-45deg);
+    }
 }
+
 
 /* Styles pour le menu en plein écran */
 
