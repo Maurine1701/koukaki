@@ -152,4 +152,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Apparition lien menu 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const fullscreenMenu = document.querySelector('.fullscreenMenu');
+    const menuLinks = fullscreenMenu.querySelectorAll('ul li a');
+
+    menuLinks.forEach((link) => {
+        link.classList.add('titleAnimation');
+    });
+
+
+    setTimeout(() => {
+        menuLinks.forEach((link, index) => {
+            const delay = index === 0 ? 400 : index * 600;
+
+            setTimeout(() => {
+                link.classList.add('visibility');
+            }, delay);
+        });
+    }, 1000);
+});
 
