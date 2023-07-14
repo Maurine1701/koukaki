@@ -1,6 +1,6 @@
-// Fonction de déclenchement de l'animation de fade-in
+// Fonction de déclenchement de l'animation de fade-in avec le parametre entry
 function fadeInAnimation(entry) {
-    // Ajout de la classe 'fadeIn' pour déclencher l'animation de fade-in
+    // Ajout de la classe 'fadeIn'à l'element "entry" pour déclencher l'animation de fade-in créé en css
     entry.target.classList.add('fadeIn');
 
 
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Ajout de la classe 'titleAnimation' à chaque lien du menu
         menuLinks.forEach((link) => {
-            link.classList.add('liensAnimation');
+            link.classList.add('titleAnimation');
         });
 
         // Déclenchement de l'animation avec un délai
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     link.classList.add('visibility');
                 }, delay);
             });
-        }, 200);
+        }, 150);
     });
 });
 

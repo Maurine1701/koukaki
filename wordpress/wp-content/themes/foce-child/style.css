@@ -420,7 +420,7 @@ main {
     width: 300px;
   }
   .swiper {
-    margin-left: 0em !important;
+    margin-left: 0.5em !important;
     margin-bottom: -200px;
   }
   h2,
@@ -428,7 +428,7 @@ main {
     font-size: 40px !important;
   }
   .main-character h3 {
-    margin-left: 300px !important;
+    margin-left: 472px !important;
   }
   #place .littleCloud {
     width: 123px;
