@@ -15,13 +15,13 @@
         margin-top: 15px !important;
         margin-left: 170px !important;
 
-        & span {
+        span {
             height: 2.5px !important;
-        }
 
-        & ::after,
-        ::before {
-            height: 2.5px !important;
+            & ::after,
+            ::before {
+                height: 2.5px !important;
+            }
         }
     }
 
@@ -31,17 +31,17 @@
         width: 100% !important;
         height: 100% !important;
 
-        & li {
+        li {
             font-size: 30px !important;
             line-height: 90px !important;
         }
 
-        & p {
+        p {
             margin-top: 125px !important;
         }
 
         .blueCatMenu {
-            top: 86px !important;
+            top: 120px !important;
             left: 323px !important;
             width: 91px !important;
             height: 78px !important;
@@ -79,7 +79,7 @@
         margin-left: -50px;
         margin-top: 35px;
 
-        & .logo {
+        .logo {
             width: 200px !important;
             margin-top: 30px;
             margin-left: 20px;
@@ -90,7 +90,7 @@
         margin-left: 200px !important;
         flex-direction: column;
 
-        & h2 {
+        h2 {
             font-size: 18px !important;
             font-weight: 400 !important;
             line-height: 25px !important;
@@ -99,17 +99,17 @@
             margin-top: -60px;
         }
 
-        & .imageNomination {
+        .imageNomination {
             width: 200px;
             margin-right: 350px;
+
+            img {
+                margin-left: 165px;
+                margin-top: 20px;
+            }
         }
 
-        & img {
-            margin-left: 165px;
-            margin-top: 20px;
-        }
-
-        &::after {
+        ::after {
             animation: none !important;
         }
     }
@@ -205,7 +205,7 @@
         width: 100% !important;
         height: 80px !important;
 
-        & li {
+        li {
             margin-left: -600px !important;
         }
     }
@@ -219,20 +219,20 @@
         width: 100% !important;
         height: 100% !important;
 
-        & .blueCatMenu {
+        .blueCatMenu {
             left: 663px !important;
         }
 
-        & .logoFullscreen {
+        .logoFullscreen {
             left: 270px !important;
         }
 
-        & .flowerMenu {
-            top: 441px;
-            left: 522px;
+        .flowerMenu {
+            top: 441px !important;
+            left: 450px !important;
         }
 
-        & .sunflowerMenu {
+        .sunflowerMenu {
             top: 697px !important;
             left: 545px !important;
         }
@@ -254,7 +254,7 @@
     .banner {
         min-height: 500px;
 
-        & .logo {
+        .logo {
             width: 300px;
         }
     }
@@ -288,20 +288,20 @@
     }
 
     .nomination {
-        & .titreOscar {
+        .titreOscar {
             font-size: 20px !important;
             font-weight: 400 !important;
             line-height: 30px !important;
         }
 
-        & h2 {
+        h2 {
             width: 400px;
             margin-top: 35px;
             margin-left: -120px;
             margin-right: -170px;
         }
 
-        & img {
+        img {
             margin-left: 147px;
             margin-top: 44px;
             width: 98%;

@@ -8,6 +8,7 @@ h6 {
 	font-family: $font__titles;
 	font-weight: bold;
 }
+
 h2 {
 	color: $color__background-body;
 	font-size: 4.429rem;
@@ -20,6 +21,7 @@ h2 {
 	background-position: center;
 	text-align: center;
 }
+
 h3 {
 	color: $color__background-body;
 	font-size: 3rem;
@@ -31,7 +33,7 @@ h3 {
 	text-align: center;
 }
 
-@media all and(max-width: #{$breakpoint__laptop}) {
+@media all and (max-width: #{$breakpoint__laptop}) {
 	h3 {
 		font-size: 2.5rem;
 	}

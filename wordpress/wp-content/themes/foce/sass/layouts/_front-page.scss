@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   img {
     margin-top: -10%;
     width: 50%;
@@ -16,7 +17,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  h2{
+
+  h2 {
     &::before {
       content: url('./assets/images/sunflower_leaves.png');
       position: absolute;
@@ -24,6 +26,7 @@
       top: 1.8em;
       z-index: -1;
     }
+
     &::after {
       content: url('./assets/images/Sunflower.png');
       position: absolute;
@@ -41,6 +44,7 @@
     font-size: 15px;
     padding-bottom: 2em;
     background-color: $color__background-body;
+
     &::before {
       content: url('./assets/images/hibiscus_leaves.png');
       position: absolute;
@@ -48,6 +52,7 @@
       top: 8em;
       z-index: -1;
     }
+
     &::after {
       content: url('./assets/images/Hibiscus.png');
       position: absolute;
@@ -60,15 +65,19 @@
     margin: 6em;
     display: flex;
     text-align: center;
+
     h3 {
       background-image: url("./assets/images/orange_characters_bg.png");
     }
+
     div {
       flex: 1
     }
+
     .other-characters {
       display: flex;
       flex-wrap: wrap;
+
       figure {
         width: 50%;
         padding: 2% 10%;
@@ -76,23 +85,27 @@
       }
     }
   }
+
   #place {
     display: flex;
     background-image: url("./assets/images/place_bg.png");
     width: 100%;
     min-height: 699px;
     background-size: cover;
+
     h3 {
       background-image: url("./assets/images/orange_place_bg.png");
       margin-bottom: -1em;
     }
-    > div {
+
+    >div {
       max-width: 580px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       margin-left: 6em;
+
       p {
         padding-left: 5em;
       }
@@ -104,15 +117,18 @@
 #studio {
   position: relative;
   margin-top: 3em;
+
   h2 {
     overflow: hidden;
     background-image: url("./assets/images/purple_studio_bg.png");
+
     &::before {
       content: url('./assets/images/random_flower.png');
       position: absolute;
       left: -1em;
       top: 0;
     }
+
     &::after {
       content: url('./assets/images/flower.png');
       position: absolute;
@@ -121,30 +137,33 @@
     }
   }
 
-  > div {
+  >div {
     display: flex;
     justify-content: space-between;
     width: 66.66%;
     margin: auto;
+
     &::before {
       content: url('./assets/images/trple-leaf.png');
       position: absolute;
       left: calc(50% - 17.225px);
       top: 40%;
     }
-    p{
-    width: 44.5%
+
+    p {
+      width: 44.5%
     }
   }
 }
 
-@media all and(max-width: #{$breakpoint__laptop}) {
+@media all and (max-width: #{$breakpoint__laptop}) {
   .story {
     &__article {
       &::before {
         left: 40%;
         top: 8em;
       }
+
       &::after {
         left: calc(40% + 414px);
         top: 2em;
@@ -153,7 +172,7 @@
   }
 }
 
-@media all and(max-width: #{$breakpoint__tablet}) {
+@media all and (max-width: #{$breakpoint__tablet}) {
   .story {
     &__article {
       &::before {
@@ -168,15 +187,16 @@
         top: 9em;
       }
     }
+
     #characters {
       flex-direction: column;
     }
   }
 }
 
-@media all and(max-width: #{$breakpoint__small_tablet}) {
+@media all and (max-width: #{$breakpoint__small_tablet}) {
   .story {
-    h2{
+    h2 {
       &::before {
         content: '';
       }
@@ -185,8 +205,10 @@
         content: '';
       }
     }
+
     &__article {
       width: 80%;
+
       &::before {
         content: '';
       }
@@ -195,27 +217,33 @@
         content: '';
       }
     }
+
     #characters {
       flex-direction: column;
     }
+
     #place {
-      > div {
+      >div {
         margin: auto;
         width: 75%;
       }
     }
   }
+
   #studio {
     h2 {
       &::after {
         content: '';
       }
     }
-    > div {
+
+    >div {
       &::before {
         content: '';
       }
+
       flex-direction: column;
+
       p {
         width: 100%;
       }
@@ -226,7 +254,7 @@
 @media all and (max-width: #{$breakpoint__large_phone}) {
   #studio {
     h2 {
-      &::before{
+      &::before {
         content: '';
       }
     }

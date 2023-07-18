@@ -11,7 +11,6 @@
 .fadeIn {
   animation: fadeIn 1s ease-in-out;
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -22,6 +21,7 @@
     transform: translateY(0);
   }
 }
+
 .titleAnimation {
   display: inline-block;
   margin-right: 15px;
@@ -94,11 +94,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 2;
   animation: floatAnimation 3s ease-in-out infinite alternate;
 }
-
 @keyframes floatAnimation {
   0% {
     transform: translate(-50%, -50%);
@@ -110,12 +108,12 @@
     transform: translate(-50%, -50%);
   }
 }
+
 .blueCatMenu,
 .orangeCatMenu,
 .blackCatMenu {
   animation: floatCat 3s ease-in-out infinite alternate;
 }
-
 @keyframes floatCat {
   0% {
     transform: translate(-50%, -100%) rotate(0deg);
@@ -127,33 +125,12 @@
     transform: translate(-50%, -95%) rotate(0deg);
   }
 }
-.liensAnimation {
-  display: inline-block;
-  margin-right: 15px;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: opacity 0.2s ease-in, transform 0.5s ease-in infinite alternate;
-}
-.liensAnimation.visibility {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .banner {
   position: relative;
   height: 500px;
   overflow: hidden;
   margin-top: 80px;
-}
-.banner .fallbackImage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -1;
 }
 .banner .video {
   position: relative;
@@ -210,7 +187,6 @@ main {
 .story {
   margin-top: 100px;
 }
-
 .story h2::after {
   height: 155px;
 }
@@ -236,8 +212,8 @@ main {
   .burgerBtn span {
     height: 2.5px !important;
   }
-  .burgerBtn ::after,
-  .burgerBtn ::before {
+  .burgerBtn span ::after,
+  .burgerBtn span ::before {
     height: 2.5px !important;
   }
   .fullscreenMenu {
@@ -254,7 +230,7 @@ main {
     margin-top: 125px !important;
   }
   .fullscreenMenu .blueCatMenu {
-    top: 86px !important;
+    top: 120px !important;
     left: 323px !important;
     width: 91px !important;
     height: 78px !important;
@@ -306,11 +282,11 @@ main {
     width: 200px;
     margin-right: 350px;
   }
-  .nomination img {
+  .nomination .imageNomination img {
     margin-left: 165px;
     margin-top: 20px;
   }
-  .nomination::after {
+  .nomination ::after {
     animation: none !important;
   }
   .main-character h3 {
@@ -396,8 +372,8 @@ main {
     left: 270px !important;
   }
   .fullscreenMenu .flowerMenu {
-    top: 441px;
-    left: 522px;
+    top: 441px !important;
+    left: 450px !important;
   }
   .fullscreenMenu .sunflowerMenu {
     top: 697px !important;
@@ -523,14 +499,13 @@ main {
   background-position: center;
   background-image: url("./assets/images/oscar_bg.png");
 }
-.nomination h2 {
+.nomination .titreOscar h2 {
   text-align: left;
 }
 
 .fadeIn {
   animation: fadeIn 1s ease-in-out;
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -541,6 +516,7 @@ main {
     transform: translateY(0);
   }
 }
+
 .titleAnimation {
   display: inline-block;
   margin-right: 15px;
@@ -613,11 +589,9 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 2;
   animation: floatAnimation 3s ease-in-out infinite alternate;
 }
-
 @keyframes floatAnimation {
   0% {
     transform: translate(-50%, -50%);
@@ -629,12 +603,12 @@ main {
     transform: translate(-50%, -50%);
   }
 }
+
 .blueCatMenu,
 .orangeCatMenu,
 .blackCatMenu {
   animation: floatCat 3s ease-in-out infinite alternate;
 }
-
 @keyframes floatCat {
   0% {
     transform: translate(-50%, -100%) rotate(0deg);
@@ -645,17 +619,6 @@ main {
   100% {
     transform: translate(-50%, -95%) rotate(0deg);
   }
-}
-.liensAnimation {
-  display: inline-block;
-  margin-right: 15px;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: opacity 0.2s ease-in, transform 0.5s ease-in infinite alternate;
-}
-.liensAnimation.visibility {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 #place {
@@ -756,7 +719,7 @@ main {
 .fullscreenMenu {
   position: fixed;
   top: 80px;
-  left: 338px;
+  left: 347px;
   width: 1440px;
   height: 1024px;
   background-color: #FFF5E9;
@@ -805,26 +768,22 @@ main {
   margin-top: 150px;
   font-size: 20px;
 }
-
-a {
+.fullscreenMenu a {
   text-decoration: none;
 }
-
-.logoFullscreen {
+.fullscreenMenu .logoFullscreen {
   position: absolute;
   left: 627px;
   top: 45px;
 }
-
-.orchidMenu {
+.fullscreenMenu .orchidMenu {
   position: absolute;
   left: -60px;
   width: 150px;
   height: 148px;
   top: 70px;
 }
-
-.flowerMenu {
+.fullscreenMenu .flowerMenu {
   position: absolute;
   position: absolute;
   top: 435px;
@@ -832,8 +791,7 @@ a {
   width: 70px;
   height: 70px;
 }
-
-.sunflowerMenu {
+.fullscreenMenu .sunflowerMenu {
   position: absolute;
   position: absolute;
   top: 90px;
@@ -841,8 +799,7 @@ a {
   width: 216px;
   height: 216px;
 }
-
-.randomflowerMenu {
+.fullscreenMenu .randomflowerMenu {
   position: absolute;
   position: absolute;
   top: 370px;
@@ -850,8 +807,7 @@ a {
   width: 75px;
   height: 75px;
 }
-
-.hibiscusMenu {
+.fullscreenMenu .hibiscusMenu {
   position: absolute;
   position: absolute;
   top: 595px;
@@ -859,8 +815,7 @@ a {
   width: 626px;
   height: 626px;
 }
-
-.blueCatMenu {
+.fullscreenMenu .blueCatMenu {
   position: absolute;
   position: absolute;
   top: 185px;
@@ -868,8 +823,7 @@ a {
   width: 109px;
   height: 98px;
 }
-
-.orangeCatMenu {
+.fullscreenMenu .orangeCatMenu {
   position: absolute;
   position: absolute;
   top: 670px;
@@ -877,8 +831,7 @@ a {
   width: 105px;
   height: 95px;
 }
-
-.blackCatMenu {
+.fullscreenMenu .blackCatMenu {
   position: absolute;
   position: absolute;
   top: 445px;
