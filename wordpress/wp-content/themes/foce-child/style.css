@@ -128,7 +128,6 @@
 
 .banner {
   position: relative;
-  height: 500px;
   overflow: hidden;
   margin-top: 80px;
 }
@@ -212,8 +211,7 @@ main {
   .burgerBtn span {
     height: 2.5px !important;
   }
-  .burgerBtn span ::after,
-  .burgerBtn span ::before {
+  .burgerBtn span::after, .burgerBtn span::before {
     height: 2.5px !important;
   }
   .fullscreenMenu {
@@ -286,7 +284,7 @@ main {
     margin-left: 165px;
     margin-top: 20px;
   }
-  .nomination ::after {
+  .nomination::after {
     animation: none !important;
   }
   .main-character h3 {
@@ -384,13 +382,10 @@ main {
     display: none !important;
   }
   .video {
-    display: none;
-  }
-  .banner img {
-    display: block;
+    width: 100%;
   }
   .banner {
-    min-height: 500px;
+    min-height: 400px;
   }
   .banner .logo {
     width: 300px;
@@ -685,8 +680,7 @@ main {
   transform: translateY(-50%);
   transition: background-color 0.5s ease-in-out;
 }
-.burgerBtn ::before,
-.burgerBtn ::after {
+.burgerBtn span::before, .burgerBtn span::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -694,20 +688,19 @@ main {
   background-color: #000;
   transition: transform 0.5s ease-in-out;
 }
-.burgerBtn ::before {
+.burgerBtn span::before {
   transform: translateY(-10px);
 }
-.burgerBtn ::after {
+.burgerBtn span::after {
   transform: translateY(10px);
 }
-
-.active span {
+.burgerBtn.active span {
   background-color: transparent !important;
 }
-.active span::before {
+.burgerBtn.active span::before {
   transform: translateY(0px) rotateZ(45deg);
 }
-.active span::after {
+.burgerBtn.active span::after {
   transform: translateY(0px) rotateZ(-45deg);
 }
 
@@ -719,7 +712,7 @@ main {
 .fullscreenMenu {
   position: fixed;
   top: 80px;
-  left: 347px;
+  left: 232px;
   width: 1440px;
   height: 1024px;
   background-color: #FFF5E9;

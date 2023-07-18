@@ -18,8 +18,8 @@
         span {
             height: 2.5px !important;
 
-            & ::after,
-            ::before {
+            &::after,
+            &::before {
                 height: 2.5px !important;
             }
         }
@@ -109,7 +109,7 @@
             }
         }
 
-        ::after {
+        &::after {
             animation: none !important;
         }
     }
@@ -244,15 +244,11 @@
     }
 
     .video {
-        display: none;
-    }
-
-    .banner img {
-        display: block;
+        width: 100%;
     }
 
     .banner {
-        min-height: 500px;
+        min-height: 400px;
 
         .logo {
             width: 300px;
