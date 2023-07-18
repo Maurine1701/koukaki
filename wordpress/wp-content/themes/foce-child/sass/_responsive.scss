@@ -308,40 +308,14 @@
         animation: none !important;
     }
 
-    .story h2,
-    .story__article,
-    #studio h2 {
-        &::after {
-            animation: none !important;
-        }
-    }
-
     #studio h2::before {
-        animation: none !important;
         margin-left: -50px;
     }
 
-
-    .site-footer ul,
-    .nomination {
-
-        &::after {
-            animation: none !important;
-        }
-    }
 
     .nomination {
         &::before {
             display: none !important;
         }
     }
-
-    .orchidMenu,
-    .flowerMenu,
-    .sunflowerMenu,
-    .randomflowerMenu,
-    .hibiscusMenu {
-        animation: none !important;
-    }
-
 }
