@@ -269,20 +269,6 @@
         margin-left: 472px !important;
     }
 
-    #place .littleCloud {
-        width: 123px;
-        height: 48px;
-        top: -330px;
-        left: 355px;
-    }
-
-    #place .bigCloud {
-        width: 220px;
-        height: 79px;
-        top: -335px;
-        left: 485px;
-    }
-
     .nomination {
         .titreOscar {
             font-size: 20px !important;
@@ -317,5 +303,19 @@
         &::before {
             display: none !important;
         }
+    }
+
+    .bigCloud {
+        width: 216px !important;
+        height: 80px !important;
+        position: relative;
+        top: -320px !important;
+        left: 420px !important;
+        filter: blur(10px);
+        z-index: 1;
+    }
+
+    .littleCloud {
+        left: 360px !important;
     }
 }

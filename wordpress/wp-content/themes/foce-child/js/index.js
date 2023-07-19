@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     new simpleParallax(video, {
         orientation: 'right',
-        scale: 1.10,
+        scale: 1.12,
         delay: 0.5,
         transition: 'ease-in-out'
     });
